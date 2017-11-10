@@ -8,7 +8,7 @@ ul,
 section {
   margin: 0;
   padding: 0;
-  border: 0;
+  /*border: 0;*/
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
@@ -33,12 +33,19 @@ body {
   font-size: 62.5%;
 }
 
+header {
+  background-color: #2574A9;
+  color: white;
+  padding: 50px;
+}
+
 h1,
-h2 {
+h2,
+h3 {
   font-size: 2.4em;
   font-weight: 400;
   margin-bottom: 8px;
-  color: #384047;
+  /*color: #384047;*/
   line-height: 1.2;
 }
 
@@ -46,17 +53,8 @@ h2 {
   font-size: 1.8em;
 }
 
-h3 {
-  font-size: 1.6em;
-  font-weight: 400;
-  margin-bottom: 8px;
-  color: #384047;
-  line-height: 1.2;
-}
-
-
 p {
-  color: #8d9aa5;
+  color: #333;
   font-size: 1.4em;
   margin-bottom: 15px;
   line-height: 1.4;
@@ -67,7 +65,7 @@ p {
   width: 90%;
   max-width: 1080px;
   background: white;
-  padding: 30px 15px;
+  padding: 30px 30px 30px 30px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -76,6 +74,10 @@ p {
   -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
 }
+
+
+
+
 
 .button {
   background: #3f8abf;
@@ -158,4 +160,50 @@ p {
     font-weight:bold;
     text-decoration:none;
 }
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+  }
+input {
+     padding: 20px;
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     resize: none;
+} 
+  
+  #input-submit {
+     color: white; 
+     background: #36D7B7;
+     cursor: pointer;
+     padding: 30px;
+     border: none;
+     font-size: 20px;
+  }
+  
+  textarea {
+      height: 126px;
+  }
+
+  input {
+
+  }
+
+  #quizresults, #correctanswers {
+    text-align: center;
+    padding: 30px;
+  }
+
+  #results {
+     color: white; 
+     background: #36D7B7;
+     cursor: pointer;
+     padding: 30px;
+     border: none;
+     margin-top: 25px;
+     font-size: 20px;
+  }
 /*End index page css button styling*/
