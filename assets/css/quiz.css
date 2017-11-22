@@ -183,6 +183,25 @@ input {
      border: none;
      font-size: 20px;
   }
+
+  #reset {
+     color: white; 
+     background: #36D7B7;
+     cursor: pointer;
+     padding: 30px;
+     border: none;
+     font-size: 20px;
+     margin: auto;
+     max-width: 50%;
+     position: center;
+
+  }
+
+
+  #message {
+    margin: 15px;
+    text-align: center;
+  }
   
   textarea {
       height: 126px;
@@ -192,7 +211,7 @@ input {
 
   }
 
-  #quizresults, #correctanswers {
+  #quiz-score, #correctanswers {
     text-align: center;
     padding: 30px;
   }
