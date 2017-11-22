@@ -336,7 +336,8 @@ h3 {
 	position: relative;
 }
 .about {
-	background-image: url(../img/guitar2.jpg);
+	background-image: url(../img/about-sep.jpg);
+	background-size: cover;
 }
 
 /* Portfolio Wrap Section */
@@ -376,6 +377,7 @@ h3 {
 
 .portfolio {
 	background-image: url(../img/guitar2.jpg);
+	background: cover;
 
 }
 
