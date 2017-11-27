@@ -7,39 +7,74 @@
   <title>Take the Quiz!</title>
  </head>
 <body>
-  <div class="container">
 
-    <form class="cf" id="questions-form"> 
-      <div class=" left cf"> 
-      <h1>How well do you know veryspry?</h1>
-      <!-- Questions stored as <h3> and html forms to grab user input -->
-      <h3>Question One: What is verspry's favorite season?</h3><input type="text" id="input-season" placeholder="What is verspry's favorite season?"> 
-      
-      <h3>Question Two: Who is verspry's favorite person?</h3> <input type="text" id="input-person" placeholder="Who is verspry's favorite person?"> 
-      
-      <h3>Question Three: What is the name of veryspry's organization with Bromando Alpha?</h3> <input type="text" id="input-organization" placeholder="What is the name of veryspry's organization with Bromando Alpha?"> 
-      
-      <h3>Question Four: Please answer yes or no to the following: Is it wise to double-cross veryspry?</h3> <input type="text" id="input-doublecross" placeholder="Please answer yes or no to the following: Is it wise to double-cross veryspry?"> 
-      
-      <h3>Question Five: At what age was veryspry introduced to cohort, Bromando Alpha?</h3> <input type="text" id="input-age" placeholder="At what age was veryspry introduced to cohort, Bromando Alpha?"> 
-      <!-- HTML form button to submit form -->
-      <input type="button" value="Submit" id="input-submit"> 
-      </div>
-    </form>
+   <div class="container"> 
 
-    <div id="quiz-score"></div>
-    <div id="quiz-results"></div>
+        <!-- Trigger/Open The Modal -->
+        <input type="button" value="Show Questions" id="startBtn" class="button">
 
-    <div>
-       <input type="button" value="Retry Quiz" id="reset">
-    </div>
 
+        <div id="quiz-score"></div>
+
+        <div id="quiz-results"></div>
+
+        <div>
+           <input type="button" value="Retry Quiz" id="reset" class="button">
+        </div>
+
+   </div>
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2></h2>
+        </div>
+
+            <div class="modal-body">
+
+                  <form class="cf" id="questions-form"> 
+
+                    <div class=""> 
+
+                    <h1>How well do you know veryspry?</h1>
+                    <!-- Questions stored as <h3> and html forms to grab user input -->
+
+                    <h3>Question One: What is verspry's favorite season?</h3>
+                    <input type="text" id="input-season" placeholder="What is verspry's favorite season?"> 
+                    
+                    <h3>Question Two: Who is verspry's favorite person?</h3>
+                    <input type="text" id="input-person" placeholder="Who is verspry's favorite person?"> 
+                    
+                    <h3>Question Three: What is the name of veryspry's organization with Bromando Alpha?</h3>
+                    <input type="text" id="input-organization" placeholder="What is the name of veryspry's organization with Bromando Alpha?"> 
+                    
+                    <h3>Question Four: Please answer yes or no to the following: Is it wise to double-cross veryspry?</h3>
+                    <input type="text" id="input-doublecross" placeholder="Please answer yes or no to the following: Is it wise to double-cross veryspry?"> 
+                    
+                    <h3>Question Five: At what age was veryspry introduced to cohort, Bromando Alpha?</h3> 
+                    <input type="text" id="input-age" placeholder="At what age was veryspry introduced to cohort, Bromando Alpha?"> 
+
+                    <!-- HTML form button to submit form --> 
+                    <input type="button" value="Submit" id="input-submit" class="button"> 
+
+                    </div>
+
+                  </form>
+
+             </div>
+
+        </div>
   </div>
+
 <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
 <!-- <script src="jquery-3.2.1.js"></script>  -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>  
 <script src="assets/js/quiz.js"></script>  
  
- 
 </body>
-</html> 
+</html>  

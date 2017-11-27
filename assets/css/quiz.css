@@ -1,4 +1,12 @@
-html,
+/*
+  ===============================================================
+   Styling for the quiz app
+   By veryspry
+  ===============================================================
+*/
+
+
+html, 
 body,
 div,
 h1,
@@ -39,6 +47,10 @@ header {
   padding: 50px;
 }
 
+h1 {
+  padding: 20px;
+}
+
 h1,
 h2,
 h3 {
@@ -60,6 +72,22 @@ p {
   line-height: 1.4;
 }
 
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+  }
+
+input { 
+     padding: 20px;
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     resize: none;
+} 
+
+
 .container {
   box-sizing: border-box;
   width: 90%;
@@ -75,154 +103,158 @@ p {
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-
+/*
+  ===============================================================
+   Button Styling
+  ===============================================================
+*/
 .button {
-  background: #3f8abf;
-  padding: 8px 18px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.4em;
-  color: white;
-  font-weight: 500;
-  border: 3px solid #3f8abf;
-  outline: none;
-  cursor: pointer;
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 2px 0 0 #3574a0;
-  -moz-box-shadow: 0 2px 0 0 #3574a0;
-  box-shadow: 0 2px 0 0 #3574a0;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+   color: white; 
+   background: #36D7B7;
+   cursor: pointer;
+   padding: 30px;
+   border: none;
+   font-size: 20px;
+   margin: 40px auto;
+   max-width: 50%;
+   position: center;
+   -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 0 0 #26bd9f;
+    -moz-box-shadow: 0 2px 0 0 #26bd9f;
+    box-shadow: 0 2px 0 0 #26bd9f;
+    -webkit-transition: 0.3s;
+   -moz-transition: 0.3s;
+   -o-transition: 0.3s;
+   transition: 0.3s;
 }
 
 .button:hover {
-  background: #397cac;
-  border-color: #397cac;
-  -webkit-box-shadow: 0 2px 0 0 #2c6085;
-  -moz-box-shadow: 0 2px 0 0 #2c6085;
-  box-shadow: 0 2px 0 0 #2c6085;
+  background: #159c81;
+  -webkit-box-shadow: 0 2px 0 0 #159c81;
+  -moz-box-shadow: 0 2px 0 0 #159c81;
+  box-shadow: 0 2px 0 0 #159c81;
+}
+  
+ {
+ color: white; 
+ background: #36D7B7;
+ cursor: pointer;
+ padding: 30px;
+ border: none;
+ font-size: 20px;
 }
 
-/*Begin index page css button styling*/
-.round-button {
-  width: 30%;
+
+#message {
+  margin: 15px;
   text-align: center;
-  display: inline-block;
-  display: block;
-  margin: auto;
-  margin-top: 100px;
-
-}
-.round-button-circle {
-  width: 100%;
-  height:0;
-  padding-bottom: 100%;
-    border-radius: 50%;
-  border:0px;
-    overflow:hidden;
-    
-    background: #4679BD; 
-    box-shadow: 8px 7px 20px 10px gray;
-    background: radial-gradient(circle, #ff0000, #cc1212, #af1515);
-}
-.round-button-circle:hover {
-  background:#4679BD;
-  box-shadow: 8px 7px 40px gray;
-  background: radial-gradient(circle, #ff0000, #cc1212, #af1515);
-}
-.round-button a {
-    display:block;
-  float:center;
-  width:100%;
-  padding-top:48%;
-    padding-bottom:50%;
-  line-height:1em;
-  margin-top:-0.5em;
-    
-  text-align:center;
-  color:#e2eaf3;
-    font-family:Verdana;
-    font-size:1.2em;
-    font-weight:bold;
-    text-decoration:none;
 }
 
-form {
-   max-width: 600px;
-   text-align: center;
-   margin: 20px auto;
-  }
-input {
-     padding: 20px;
-     display: block;
-     width: 100%;
-     margin-top: 1em;
-     font-family: 'Merriweather', sans-serif;
-     resize: none;
-} 
-  
-  #input-submit {
-     color: white; 
-     background: #36D7B7;
-     cursor: pointer;
-     padding: 30px;
-     border: none;
-     font-size: 20px;
-  }
-
-  #reset {
-     color: white; 
-     background: #36D7B7;
-     cursor: pointer;
-     padding: 30px;
-     border: none;
-     font-size: 20px;
-     margin: auto;
-     max-width: 50%;
-     position: center;
-
-  }
+textarea {
+    height: 126px;
+}
 
 
-  #message {
-    margin: 15px;
-    text-align: center;
-  }
-  
-  textarea {
-      height: 126px;
-  }
+#quiz-score, #correctanswers {
+  text-align: center;
+  padding: 30px;
+}
 
-  input {
+#results {
+   color: white; 
+   background: #36D7B7;
+   cursor: pointer;
+   padding: 30px;
+   border: none;
+   margin-top: 25px;
+   font-size: 20px;
+}
 
-  }
 
-  #quiz-score, #correctanswers {
-    text-align: center;
-    padding: 30px;
-  }
+/*
+  ===============================================================
+   Modal Styling
+  ===============================================================
+*/
 
-  #results {
-     color: white; 
-     background: #36D7B7;
-     cursor: pointer;
-     padding: 30px;
-     border: none;
-     margin-top: 25px;
-     font-size: 20px;
-  }
-/*End index page css button styling*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 20px 16px;
+    background-color: #fff;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+   /* -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* Uncomment this out to add animation if desired - Though there is a bug. Doesn't stay down from top 300px, bounces back to top */
+/* Add Animation */
+/*
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 300px; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 300px; opacity: 1}
+}
+*/
