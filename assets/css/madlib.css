@@ -1,0 +1,200 @@
+
+/* ==========================================================================
+   Created by: VERSPRY
+   Styling for Mad Lib App
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+html,
+button,
+select,
+textarea {
+    color: #222;
+}
+
+input {
+     padding: 20px;
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     resize: ;
+     object-fit: ;
+} 
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+	text-align: center
+}
+
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Lato" sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    background-color: #ffe4e1;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Oswald", sans-serif;
+	font-weight: 300;
+}
+
+h1 {
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+h3 {
+	padding: 20px, 0px, 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: ;
+}
+
+/* ==========================================================================
+    Contain the heading and start button of the page in box
+   ========================================================================== */
+.container {
+	border-style: solid;
+	border-width: .5px;
+	border-radius: 1%;
+	border-color: darkgrey;
+	box-shadow: 5px 5px 5px #ecc4c4;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 150px;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #f7cfcf;
+
+}
+
+/* ==========================================================================
+    Button Styling
+   ========================================================================== */
+
+.button {
+  background: #84c922;
+  padding: 8px 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4em;
+  color: white;
+  font-weight: 500;
+  border: 3px solid #84c922;
+  outline: none;
+  cursor: pointer;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 0 0 #72b415;
+  -moz-box-shadow: 0 2px 0 0 #72b415;
+  box-shadow: 0 2px 0 0 #72b415;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  width: 35%;
+  margin: 40px auto 20px;
+
+}
+
+.button:hover {
+  background: #74b020;
+  border-color: #74b020;
+  -webkit-box-shadow: 0 2px 0 0 #72b415;
+  -moz-box-shadow: 0 2px 0 0 #72b415;
+  box-shadow: 0 2px 0 0 #72b415;
+}
+
+
+/* ==========================================================================
+    Modal Styling
+   ========================================================================== */
+   
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #ffe4e1;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style for everything inside of the modal */
+.input {
+	width: 80%;
+	position: center;
+	text-align: center;
+	margin: auto;
+	padding: 30px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
