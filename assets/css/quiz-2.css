@@ -1,0 +1,263 @@
+ /*
+  ===============================================================
+   Styling for the quiz app
+   By veryspry
+  ===============================================================
+*/ 
+
+
+html, 
+body,
+div,
+h1,
+h2,
+p,
+ul,
+section {
+  margin: 0;
+  padding: 0;
+  /*border: 0;*/
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  display: block;
+}
+
+body {
+  background: #edeff0;
+  padding: 50px 0 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+}
+
+header {
+  background-color: #2574A9;
+  color: white;
+  padding: 50px;
+}
+
+h1 {
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 2.4em;
+  font-weight: 400;
+  margin-bottom: 8px;
+  /*color: #384047;*/
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.4em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  color: #333;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+  }
+
+input { 
+     padding: 20px;
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     resize: none;
+} 
+
+.hidden {
+  visibility: hidden;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 1080px;
+  background: white;
+  padding: 30px 30px 30px 30px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+/*
+  ===============================================================
+   Button Styling
+  ===============================================================
+*/
+.button {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   color: white; 
+   background: #36D7B7;
+   cursor: pointer;
+   padding: 30px;
+   border: none;
+   font-size: 20px;
+   margin: 40px auto;
+   max-width: 50%;
+   position: center;
+   -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 0 0 #26bd9f;
+    -moz-box-shadow: 0 2px 0 0 #26bd9f;
+    box-shadow: 0 2px 0 0 #26bd9f;
+    -webkit-transition: 0.3s;
+   -moz-transition: 0.3s;
+   -o-transition: 0.3s;
+   transition: 0.3s;
+}
+
+.button:hover {
+  background: #159c81;
+  -webkit-box-shadow: 0 2px 0 0 #159c81;
+  -moz-box-shadow: 0 2px 0 0 #159c81;
+  box-shadow: 0 2px 0 0 #159c81;
+}
+  
+ {
+ color: white; 
+ background: #36D7B7;
+ cursor: pointer;
+ padding: 30px;
+ border: none;
+ font-size: 20px;
+}
+
+
+#message {
+  margin: 15px;
+  text-align: center;
+}
+
+textarea {
+    height: 126px;
+}
+
+
+#quiz-score, #correctanswers {
+  text-align: center;
+  padding: 30px;
+}
+
+
+
+
+/*
+  ===============================================================
+   Modal Styling
+  ===============================================================
+*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 20px 16px;
+    background-color: #fff;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+   /* -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* Uncomment this out to add animation if desired - Though there is a bug. Doesn't stay down from top 300px, bounces back to top */
+/* Add Animation */
+/*
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 300px; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 300px; opacity: 1}
+}
+*/

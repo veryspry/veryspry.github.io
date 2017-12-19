@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Vanilla JS Quiz</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/quiz-2.css">
+</head>
+<body>  
+
+
+        <form class="cf" id="questions-form"> 
+
+            <div class=""> 
+
+            <h1>How well do you know veryspry?</h1>
+            <!-- Questions stored as <h3> and html forms to grab user input -->
+
+            <h2 id="currentQuestionText"></h2>
+
+            <h3 id="results"></h3>
+
+
+            <input type="text" id="currentQuestionInput" placeholder=""> 
+
+            <input type="button" value="Next" id="nextButton" class="button"> 
+
+            <input type="button" value="Back" id="backButton" class="button"> 
+            <!-- HTML form button to submit form --> 
+            <input type="button" value="Submit" id="submitButton" class="button"> 
+
+            <input type="button" value="Retry" id="retryButton" class="button"> 
+
+            </div>
+
+        </form>
+
+
+
+        <footer>
+            <p id="progress">Question x of y</p>
+        </footer>
+
+<script src="assets/js/quiz-2.js"></script>
+</body>
+</html>  
