@@ -35,7 +35,7 @@ quiz.add(question0);
 quiz.add(question1);
 quiz.add(question2);
 quiz.add(question3);
-quiz.add(question4);
+quiz.add(question4); 
 
 
 /*
@@ -100,11 +100,8 @@ function show() {
 	currentQuestionInput.classList.remove('hidden');
 }
 //Write the current question and the total number of questions to the page
-function progressReport() {
-	progress.innerHTML = 'Question ' + (nowShowingIndex + 1) + ' of ' + quiz.questions.length;
-	if ( (nowShowingIndex + 1) > quiz.questions.length ) {
-		progress.innerHTML = 'Quiz Finished!';
-	}
+function progressReport() {	
+		progress.innerHTML = 'Question ' + (nowShowingIndex + 1) + ' of ' + quiz.questions.length;
 }
 
 /*
@@ -207,6 +204,7 @@ submitButton.onclick = function() {
 	var input = document.getElementById('currentQuestionInput').value;
 	//store input in question instance
 	quiz.questions[nowShowingIndex].guess = input;
+	progress.innerHTML = '';
 	submitButtonDisplay();
 	hide();
 	backButtonDisplay();
@@ -240,48 +238,3 @@ retryButton.onclick = function() {
 	progressReport();
 	nextButtonDisplay('show');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
